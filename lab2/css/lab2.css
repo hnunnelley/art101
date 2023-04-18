@@ -1,0 +1,19 @@
+h1{
+    color: aquamarine;
+    font-size: 200%;
+
+}
+p {
+    font-family: "comic sans";
+    text-indent: 20px;
+    margin-left: 10px;
+}
+#content{
+    background-color: green;
+    width: 500px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #208342;
+    font-size: 20px;
+}
