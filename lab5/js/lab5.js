@@ -23,13 +23,13 @@ function myFunction(param1, param2) {
 
 //Define Variables
 
-carMake = "Honda";
-carModel = "Civic";
-carColor = "Gray";
-carYear = 2009;
+var carMake = "Honda";
+var carModel = "Civic";
+var carColor = "Gray";
+var carYear = 2009;
 
 //calculate
-carAge  = 2023 - carYear;
+var carAge  = 2023 - carYear;
 
 //output
 document.writeln("Make: " + carMake + "<br>");
