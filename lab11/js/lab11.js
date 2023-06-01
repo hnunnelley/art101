@@ -3,7 +3,8 @@
 // Date: 18 May 2023
 
 
-$(".minor-section").append("<button class='btn btn-secondary highlight-button'>Toggle Highlight</button");
+$(".minor-section").append("<button class='btn btn-secondary highlight-button'>Toggle Highlight</button>");
+
 
 
 $(".highlight-button").click(function(){
@@ -11,11 +12,20 @@ $(".highlight-button").click(function(){
 })
 
 $("#party-toggle button").click(function(){
-  if ($("body").hasClass("party")){
+
+  if ($("body").hasClass("party")) {
     $("body").removeClass("party");
-    $("#party-toggle").html("Business");
+    $("#party-toggle button").html("Party");
+  }
+  else {
+    $("body").addClass("party");
+    $("#party-toggle button").html("Business");
   }
 })
+
+
+
+
 
 
   
