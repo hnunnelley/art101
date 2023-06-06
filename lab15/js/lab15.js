@@ -9,14 +9,27 @@ function getAdvice() {
   $.ajax({
     url: "https://api.adviceslip.com/advice",
     type: "GET",
-    advice: {},
+    
+    data: {
+    advice: "",
+    slip: {},
+    id: "",
+        },
+    
+    success:function(data){
+        var advice = data.slip;
+        $("output").html(advice)
+        
+    }
    
   })
-  .done(function(advice) {
- 		// console.log(data);
-    console.log(advice);
-    $("#output").html(advice);
-  })
 }
+//var advice = data.advice;
+//.done(function(advice) {
+// console.log(data);
+//console.log(advice);
+//$("#output").html(advice);
+//})
+//}
 
 $("button").click(getAdvice);
