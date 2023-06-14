@@ -17,7 +17,7 @@ function getAdvice() {
         },
     
     success:function(data){
-        var advice = data.slip;
+        var advice = data.advice;
         $("output").html(advice)
         
     }
